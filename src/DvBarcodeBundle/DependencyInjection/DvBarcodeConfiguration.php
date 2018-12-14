@@ -14,7 +14,7 @@ class DvBarcodeConfiguration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root("dv_evil_queue");
+        $rootNode = $treeBuilder->root("dv_barcode");
 
         $rootNode->
             children()->
