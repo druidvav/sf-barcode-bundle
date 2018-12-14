@@ -28,9 +28,12 @@ class DvBarcodeExtension extends Extension
     protected function loadConfiguration(array $configs, ContainerBuilder $container)
     {
         $config = $this->processConfiguration(new DvBarcodeConfiguration(), $configs);
-        $optionDef = new Definition('ZappstoreBundle\Twig\Barcode');
+        $optionDef = new Definition('DvBarcodeBundle\Twig\SvgBarcodeExtension');
+        $optionDef->addTag('twig.extension');
+        $container->setDefinition('DvBarcodeBundle\Twig\SvgBarcodeExtension', $optionDef);
+        $optionDef = new Definition('DvBarcodeBundle\Twig\SvgExtension');
         $optionDef->addMethodCall('setFont', [ __DIR__ . '/../Fonts/' . $config['font'] . '.svg' ]);
         $optionDef->addTag('twig.extension');
-        $container->setDefinition('ZappstoreBundle\Twig\Barcode', $optionDef);
+        $container->setDefinition('DvBarcodeBundle\Twig\SvgExtension', $optionDef);
     }
 }

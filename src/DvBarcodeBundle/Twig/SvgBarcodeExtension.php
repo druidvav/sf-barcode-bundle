@@ -1,19 +1,12 @@
 <?php
-namespace ZappstoreBundle\Twig;
+namespace DvBarcodeBundle\Twig;
 
-use Picqer\Barcode\BarcodeGeneratorSVG;
+use DvBarcodeBundle\Barcode\BarcodeGeneratorSVG;
 use Twig_Extension;
 use Twig_SimpleFunction;
 
 class SvgBarcodeExtension extends Twig_Extension
 {
-    protected $font;
-
-    public function setFont($font)
-    {
-        $this->font = $font;
-    }
-
     public function getFunctions()
     {
         return [
