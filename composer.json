@@ -1,0 +1,17 @@
+{
+  "name": "druidvav/barcode-bundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "description": "",
+  "autoload": {
+    "psr-4": { "": "src/" }
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "symfony/framework-bundle": "^3.2",
+    "ext-xmlreader": "*"
+  },
+  "require-dev": {
+
+  }
+}
