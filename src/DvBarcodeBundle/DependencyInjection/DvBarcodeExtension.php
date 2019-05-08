@@ -1,6 +1,7 @@
 <?php
 namespace DvBarcodeBundle\DependencyInjection;
 
+use Exception;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -11,7 +12,7 @@ class DvBarcodeExtension extends Extension
      * @param  array $configs
      * @param  ContainerBuilder $container
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function load(array $configs, ContainerBuilder $container)
     {
@@ -22,8 +23,8 @@ class DvBarcodeExtension extends Extension
      * Loads the configuration in, with any defaults
      *
      * @param array $configs
-     * @param \Symfony\Component\DependencyInjection\ContainerBuilder $container
-     * @throws \Exception
+     * @param ContainerBuilder $container
+     * @throws Exception
      */
     protected function loadConfiguration(array $configs, ContainerBuilder $container)
     {

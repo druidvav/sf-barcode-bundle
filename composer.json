@@ -8,10 +8,10 @@
   },
   "require": {
     "php": ">=7.0.0",
-    "symfony/framework-bundle": "^3.2",
+    "symfony/framework-bundle": "^3.4",
     "ext-xmlreader": "*"
   },
   "require-dev": {
-
+    "twig/twig": "^2.7"
   }
 }
