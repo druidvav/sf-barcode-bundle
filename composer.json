@@ -7,9 +7,10 @@
     "psr-4": { "": "src/" }
   },
   "require": {
-    "php": ">=7.0.0",
+    "php": ">=7.4.0",
     "symfony/framework-bundle": "^3.4",
-    "ext-xmlreader": "*"
+    "ext-xmlreader": "*",
+    "ext-bcmath": "*"
   },
   "require-dev": {
     "twig/twig": "^2.7"
