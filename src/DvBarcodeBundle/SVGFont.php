@@ -34,6 +34,7 @@ class SVGFont
             $xShift = 0;
             for ($i = 0; $i < count($text); $i++) {
                 $letter = $text[$i];
+                if (empty($this->glyphs[$letter])) continue;
                 if (($xShift + $this->glyphs[$letter]->horizAdvX) >= ($this->config['width'] / $size)) {
                     $result .= "</g>";
                     $xShift = 0;
