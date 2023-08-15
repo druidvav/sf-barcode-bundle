@@ -18,7 +18,7 @@ class DvBarcodeConfiguration implements ConfigurationInterface
 
         $rootNode->
             children()->
-                scalarNode("font")->defaultValue('PTSansRegular')->end()->
+                scalarNode("font")->defaultValue('RobotoRegular')->end()->
             end()
         ;
 
