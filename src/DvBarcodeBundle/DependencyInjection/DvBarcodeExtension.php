@@ -3,7 +3,7 @@ namespace DvBarcodeBundle\DependencyInjection;
 
 use Exception;
 use Symfony\Component\DependencyInjection\Definition;
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
+use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class DvBarcodeExtension extends Extension
